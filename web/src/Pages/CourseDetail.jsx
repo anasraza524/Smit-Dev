@@ -24,7 +24,7 @@ const [page, setPage] = useState(0)
 const [CurrentPage, setCurrentPage] = useState(1)
 
 useEffect(() => {
-  getAProduct()
+  getAProduct(id)
 
 }, [])
   const getAProduct = async (id) => {
