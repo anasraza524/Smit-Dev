@@ -5,13 +5,14 @@ import axios from 'axios';
 import {
   Typography, Card, CardContent,CircularProgress,
   TextField, Button, Paper, Chip, Box, Grid,
-  CardActions, CardActionArea, Divider, CardMedia,Stack
+  CardActions, CardActionArea, CardMedia,Stack
 } from '@mui/material'
 import { GlobalContext } from '../Context/Context';
 import { useParams } from 'react-router-dom';
 
 const CourseDetail = () => {
   const { id } = useParams();
+
   let { state, dispatch } = useContext(GlobalContext);
   const [eof, setEof] = useState(false)
   const [CurrentProduct, setCurrentProduct] = useState(null)
