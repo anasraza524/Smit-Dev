@@ -21,6 +21,7 @@ import OrderPage from "./Pages/OrderPage";
 import { style } from "@mui/system";
 import AddToProduct from "./Pages/AddToProduct";
 import UserOrderDetail from "./Pages/UserOrderDetail";
+import { showAlert } from "./utils/helper";
 function App() {
   let { state, dispatch } = useContext(GlobalContext);
 
@@ -41,6 +42,7 @@ function App() {
     )
 
     console.log("response: ", response);
+    // localStorage.removeItem('welcomeMsg');
 
     dispatch({
       type: 'USER_LOGOUT'
@@ -62,7 +64,12 @@ const getProfile = async () => {
     })
 
     console.log("responseApp: ", response);
+    if(!localStorage.getItem('welcomeMsg') && state.isLogin){
+      localStorage.setItem('welcomeMsg',(state.user.isAdmin===true)?'Admin':'user')
+// showAlert('Welcome',(state.user.isAdmin===true)?'Admin':'User')
+showAlert('Welcome'+' '+(state.user.isAdmin===true)?'Admin':'',`${response.data.firstName} ${response.data.lastName}`)
 
+}
     dispatch({
       type: 'USER_LOGIN',
       payload: response.data
@@ -85,9 +92,12 @@ useEffect(() => {
     
  
   getProfile();
-
+// if(!localStorage.getItem('welcomeMsg') && state.isLogin){
+// localStorage.setItem('welcomeMsg',(state.user.isAdmin===true)?'Admin':'user')
+// showAlert('Welcome',(state.user.isAdmin===true)?'Admin':'User')
+// }
 }, [state.isLogin])
-console.log(state.isLogin)
+console.log(state.isLogin,"loginn")
   // Inercepter of withCredentials = true;
   
 //   useEffect(() => {
