@@ -22,6 +22,7 @@ import { style } from "@mui/system";
 import AddToProduct from "./Pages/AddToProduct";
 import UserOrderDetail from "./Pages/UserOrderDetail";
 import { showAlert } from "./utils/helper";
+import CourseDetail from "./Pages/CourseDetail";
 function App() {
   let { state, dispatch } = useContext(GlobalContext);
 
@@ -161,10 +162,9 @@ console.log(state.isLogin,"loginn")
 {(state.isLogin===true && state.user.isAdmin===false )?
 <div>
 <Nav LogoutHandle={LogoutHandle} /> 
-
  <Routes>
-
      <Route path="/" element={<HomeUser />}/>
+     <Route path="CourseDetail:id" element={<CourseDetail/>} />
      <Route path="AddToProduct" element={<AddToProduct/>} />
      <Route path="UserOrderDetail" element={<UserOrderDetail/>} />
      <Route path="*" element={<Navigate to="/" replace={true} />} />

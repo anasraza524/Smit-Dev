@@ -66,7 +66,7 @@ const ProductCardForUser = ({image,price,name,des,productType,priceUnit}) => {
         color='success' variant='contained'>Edit</Button> */}
            <Button 
 
-color='susses' variant='contained'>Add to Cart</Button>
+color='susses' variant='contained'>Enroll</Button>
         <Button 
 
         color='error' variant='contained'>Delete</Button>

@@ -172,10 +172,10 @@ theme="light"
       >
          <DialogTitle dividers="true" >
          <Avatar sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
-         SMIT
+         Online Learning App
         </Avatar>
         <Typography sx={{fontSize:{xs:"26px"},display:'flex',flexDirection:"column",alignItems:"center"}} variant='h4'>
-          Online Discount Store
+          Online Learning App
        
         </Typography>
      
@@ -260,13 +260,13 @@ theme="light"
         
         /> */}
           <span style={{display:"flex",alignItems:"center"}}>
-            <Avatar sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
+            {/* <Avatar sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
           <LocalMallIcon style={{fontSize:"40px"}} />
-        </Avatar>
+        </Avatar> */}
         <Typography  variant="h6"
           sx={{ 
           display: { xs: "" },color:"white",fontSize:"60px",fontFamily:"sans-serif" }}>
-           Online Discount Store
+           Online Learning App
          </Typography></span>
           <Typography component="h1" variant="h5">
             Sign up

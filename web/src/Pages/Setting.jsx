@@ -70,7 +70,7 @@ const [CurrentPage, setCurrentPage] = useState(1)
       <Box>
 
 <Typography sx={{m:2,fontSize:{xs:30,sm:50,lg:50}}}>
-Order Detail
+Payment Detail
 </Typography>
 
 

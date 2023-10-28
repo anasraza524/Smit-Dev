@@ -10,8 +10,8 @@ const SlideShow = () => {
         <CardMedia
          component="img"
          sx={{height:{xs:'200px',sm:"500px",lg:'500px'}}}
-         image="https://img.freepik.com/premium-psd/headphone-brand-product-sale-facebook-cover-banner_161103-93.jpg?w=2000"
-         
+        //  image="https://img.freepik.com/premium-psd/headphone-brand-product-sale-facebook-cover-banner_161103-93.jpg?w=2000"
+         image="https://static.vecteezy.com/system/resources/previews/002/294/874/non_2x/e-learning-web-banner-design-students-take-online-tests-during-online-classes-online-education-digital-classroom-e-learning-concept-header-or-footer-banner-free-vector.jpg"
           className="d-block w-100"
        
           alt="First slide"
@@ -24,7 +24,9 @@ const SlideShow = () => {
          component="img"
           sx={{height:{xs:'200px',sm:"500px",lg:'500px'}}}
           className="d-block w-100"
-          image="https://graphicsfamily.com/wp-content/uploads/edd/2021/07/Shop-Products-Social-Media-Banner-Design-Template-scaled.jpg"
+          // image="https://graphicsfamily.com/wp-content/uploads/edd/2021/07/Shop-Products-Social-Media-Banner-Design-Template-scaled.jpg"
+         image="https://t3.ftcdn.net/jpg/02/22/79/20/360_F_222792075_II1pg3JCsupesEMEFVRIbORG9EXAa75i.jpg"
+          // image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDW8AAoiEVizybiaJ9QTYfwHqRIG9gTz-wsQps4cKm9EyNVlJy3kJDcVQMG5MnYDNwhfw&usqp=CAU"
           alt="Second slide"
          
         />
@@ -38,7 +40,8 @@ const SlideShow = () => {
          component="img"
           sx={{height:{xs:'200px',sm:"500px",lg:'500px'}}}
           className="d-block w-100"
-          image="https://img.freepik.com/premium-psd/smoothie-healthy-drink-menu-promotion-facebook-cover-banner-template_159024-302.jpg?w=2000"
+          // image="https://img.freepik.com/premium-psd/smoothie-healthy-drink-menu-promotion-facebook-cover-banner-template_159024-302.jpg?w=2000"
+          image="https://static.vecteezy.com/system/resources/previews/011/923/606/original/online-education-web-banner-template-free-vector.jpg"
           alt="Third slide"
     
         />

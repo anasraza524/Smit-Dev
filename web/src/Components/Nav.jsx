@@ -38,7 +38,7 @@ import './Nav.css'
 
  const StyledToolbar = styled(Toolbar)({
    display: "flex",
-   backgroundColor:"skyblue",
+   backgroundColor:"#B2BEB5",
    justifyContent: "space-between",
    // [Toolbar.breakpoints.up("sm")]: {
    //     justifyContent: "center",
@@ -102,9 +102,9 @@ const [loadProduct, setLoadProduct] = useState(false)
    return (
      <AppBar position="sticky" >
 
-       <StyledToolbar sx={{backgroundColor:"#7ceaa4", color:"white"}}>
+       <StyledToolbar sx={{backgroundColor:"#B2BEB5", color:"white"}}>
        <Box   sx={{display:{lg:'none',sm:'none'},
-      backgroundColor:"#7ceaa4", color:"white"}} onClick={toggleDrawer}><DragHandle/></Box >
+      backgroundColor:"#B2BEB5", color:"white"}} onClick={toggleDrawer}><DragHandle/></Box >
            <Drawer
            
                open={isOpen}
@@ -140,10 +140,10 @@ const [loadProduct, setLoadProduct] = useState(false)
              <ListItemIcon>
              <Article /> 
              </ListItemIcon>
-             <ListItemText primary="Cart" />
+             <ListItemText primary="Enrolled" />
            </ListItemButton>
          </ListItem></LinkPage>
-         <LinkPage
+         {/* <LinkPage
                   onClick={()=>{setIsOpen(false)}}
                  to="/UserOrderDetail">
          <ListItem sx={{ color:"white" }}
@@ -154,7 +154,7 @@ const [loadProduct, setLoadProduct] = useState(false)
              </ListItemIcon>
              <ListItemText primary="Order Detail" />
            </ListItemButton>
-         </ListItem></LinkPage>
+         </ListItem></LinkPage> */}
                  </div>:null}
                 
          {(state.user.isAdmin===true)?
@@ -179,7 +179,7 @@ const [loadProduct, setLoadProduct] = useState(false)
              <ListItemIcon>
               <Article /> 
              </ListItemIcon>
-             <ListItemText primary="Add item" />
+             <ListItemText primary="Add Course" />
            </ListItemButton>
          </ListItem></LinkPage>
          <LinkPage
@@ -201,7 +201,7 @@ const [loadProduct, setLoadProduct] = useState(false)
              <ListItemIcon>
               <Article /> 
              </ListItemIcon>
-             <ListItemText primary="Order Page" />
+             <ListItemText primary="Payment" />
            </ListItemButton>
          </ListItem></LinkPage>
      
@@ -227,11 +227,11 @@ const [loadProduct, setLoadProduct] = useState(false)
        <Box sx={{justifyContent:{xs:'center',sm: "left",lg:'left'},
    alignItems:{xs:"center"}
    }}>
-       <LocalMall sx={{ display: { xs: "none", sm: "block",lg:'block' } }} /> 
+       {/* <LocalMall sx={{ display: { xs: "none", sm: "block",lg:'block' } }} />  */}
          <Typography  variant="h6"
           sx={{ 
           display: { xs: "" } }}>
-           Online Discount Store
+           Online Learning App
          </Typography>
        </Box>
 
@@ -245,11 +245,11 @@ className="hover-underline-animation"
 <LinkPage
 className="hover-underline-animation"
  
-   to="/AddToProduct" ><TabPage label="Cart" /></LinkPage>
-   <LinkPage
+   to="/AddToProduct" ><TabPage label="Enrolled" /></LinkPage>
+   {/* <LinkPage
 className="hover-underline-animation"
  
-   to="/UserOrderDetail" ><TabPage label="Order Detail" /></LinkPage>
+   to="/UserOrderDetail" ><TabPage label="Order Detail" /></LinkPage> */}
 </div>
 
 :null}
@@ -260,14 +260,14 @@ className="hover-underline-animation"
    to="/" ><TabPage label="Home" /></LinkPage>
 <LinkPage
   className="hover-underline-animation"
-   to="/AddNewItem" ><TabPage label="Add Item" /></LinkPage>
+   to="/AddNewItem" ><TabPage label="Add Course" /></LinkPage>
   
   <LinkPage
    className="hover-underline-animation"
     to="/OrderPage" ><TabPage label="Setting" /></LinkPage>
    <LinkPage
    className="hover-underline-animation"
-    to="/Setting" ><TabPage label="Order Page" /></LinkPage>
+    to="/Setting" ><TabPage label="Payment" /></LinkPage>
  
 </div>
 

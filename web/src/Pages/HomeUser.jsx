@@ -7,9 +7,16 @@ import {
   CardActions, CardActionArea, Divider, CardMedia,Stack
 } from '@mui/material'
 import ProductCard from '../Components/ProductCard';
-
-
+// import Paper from '@mui/material/Paper';
+import InputBase from '@mui/material/InputBase';
+// import Divider from '@mui/material/Divider';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import SearchIcon from '@mui/icons-material/Search';
+import DirectionsIcon from '@mui/icons-material/Directions';
+import { useNavigate ,Link} from "react-router-dom";
 import { GlobalContext } from '../Context/Context';
+import { Navigate } from 'react-router-dom';
 const HomeUser = () => {
     let { state, dispatch } = useContext(GlobalContext);
   const [eof, setEof] = useState(false)
@@ -135,9 +142,31 @@ setError('')
       <Divider/>
       <Typography sx={{m:2,fontSize:{xs:30,sm:50,lg:50}}} >
 
- All Products
+ All Courses
 </Typography>
 <Divider/>
+<div style={{display:"flex", justifyContent:"center", alignItems:"center"}}>
+<Paper
+      component="form"
+      sx={{ p: '6px 8px', display: 'flex', alignItems: 'center', width: {lg:800,sm:600,xs:400}, justifyContent:"center" }}
+    >
+      <IconButton sx={{ p: '10px' }} aria-label="menu">
+        <MenuIcon />
+      </IconButton>
+      <InputBase
+        sx={{ ml: 1, flex: 1 }}
+        placeholder="Search Courses"
+        inputProps={{ 'aria-label': 'search Courses' }}
+      />
+      <IconButton type="button" sx={{ p: '10px' }} aria-label="search">
+        <SearchIcon />
+      </IconButton>
+      <Divider sx={{ height: 28, m: 0.5 }} orientation="vertical" />
+      <IconButton color="primary" sx={{ p: '10px' }} aria-label="directions">
+        <DirectionsIcon />
+      </IconButton>
+    </Paper>
+    </div>
 <Grid 
       sx={{display:{lg:"flex",sx:"flex",xs:"block"},flexWrap:"wrap",m:{xs:1,sm:3,lg:3},
       mb:{xs:6,sm:5,lg:3},ml:{xs:3,sm:0,lg:0}}}
@@ -152,10 +181,7 @@ homeProductData?.map((eachProduct, index) => (
 key={index}
 sx={{ width: '100%', maxWidth:{ lg:300,xs:300,sm:300},
     bgcolor: 'white',p:1,borderRadius:"10px",color:"green",m:"1em"}}>
-     
-      
-      
-      <CardMedia
+<CardMedia
         component="img"
         width="150"
         loading="lazy "
@@ -208,13 +234,15 @@ sx={{ width: '100%', maxWidth:{ lg:300,xs:300,sm:300},
           }}
         
         color='success' variant='contained'>Edit</Button> */}
-        <Button fullWidth
+      <Link to={`CourseDetail:${eachProduct?._id}`}>  <Button fullWidth
                 //  onClick={AddTheProduct}
-                onClick={() => {
-                  getAProduct(eachProduct?._id)
+                // onClick={() => {
+                //   // getAProduct(eachProduct?._id)
+                //   Navigate(`CourseDetail/${eachProduct?._id}`)
                  
-                }}
-                 color='success' variant='contained'>Add to cart</Button>
+                // }}
+
+                 color='success' variant='contained'>Enroll</Button></Link>
         {/* <Button 
 
         color='error' variant='contained'>Delete</Button> */}

@@ -21,6 +21,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import ErrorIcon from '@mui/icons-material/Error';
 import { ToastContainer, toast } from 'react-toastify';
 import { padding } from '@mui/system';
+
 function Copyright(props) {
   return (
 
@@ -180,13 +181,12 @@ theme="light"
           }}
         >
            <span style={{display:"flex",alignItems:"center"}}>
-            <Avatar sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
-         SMIT
-        </Avatar>
+            {/* <Avatar alt="Remy Sharp" src="" sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
+        </Avatar> */}
         <Typography  variant="h6"
           sx={{ 
           display: { xs: "" },color:"white",fontSize:"30px",fontFamily:"sans-serif" }}>
-           Online Discount Store
+           Online Learning App
          </Typography></span>
           <Typography component="h1" variant="h5">
             Login

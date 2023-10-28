@@ -109,11 +109,11 @@ onClose={DialogClose}
 aria-labelledby="responsive-dialog-title"
 >
  <DialogTitle dividers="true" >
- <Avatar sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
-         SMIT
-        </Avatar>
+ {/* <Avatar sx={{ m: 1,p:4, bgcolor: 'skyblue' }}>
+         Online Learning App
+        </Avatar> */}
 <Typography sx={{fontSize:{xs:"26px"},display:'flex',flexDirection:"column",alignItems:"center"}} variant='h4'>
-  Online Discount Store
+  Online Learning App
   {/* <CloseIcon onClick={DialogClose} sx={{m:1,float:"right"}} /> */}
 </Typography>
 
@@ -176,7 +176,7 @@ Ok
         <Typography  variant="h6"
           sx={{ 
           display: { xs: "" },color:"white",fontSize:"60px",fontFamily:"sans-serif" }}>
-           Online Discount Store
+           Online Learning App
          </Typography></span>
         <Typography component="h1" variant="h5">
         Forgot password

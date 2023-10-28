@@ -170,7 +170,7 @@ setError('')
       >
       <DialogTitle dividers="true" >
         <Typography sx={{fontSize:{xs:"28px"}}} variant='h4'>
-          E-Mart
+          E-Learing
           <CloseIcon onClick={handleClose} sx={{m:1,float:"right"}} />
         </Typography>
      
@@ -178,7 +178,7 @@ setError('')
         <DialogContent dividers>
 
           <Typography sx={{fontSize:{xs:"16px"}}} variant='h6' gutterBottom>
-            There is no product in cart please add to cart first..... 
+            There is no course Enroll please Enroll first..... 
           </Typography>
           <Typography sx={{fontSize:{xs:"16px"}}} variant='h6'>
             Thank you...
@@ -287,7 +287,7 @@ onClick={() => {
      <Divider variant="middle" />
      <Typography sx={{m:2,fontSize:{xs:30,sm:50,lg:50}}} >
 
-Total Amount:{total}
+Total Enroll Courses:{total}
 </Typography>
 
      <Divider/><br />
@@ -329,7 +329,7 @@ id='email'
         name='shippingAddress'
         />
 
-        <Button style={{marginTop:"15px"}} type="submit"  variant='contained' >Place Order</Button>
+        <Button style={{marginTop:"15px"}} type="submit"  variant='contained' >Done</Button>
         </form>
      </div>
   )

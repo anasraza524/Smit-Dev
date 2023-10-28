@@ -155,7 +155,7 @@ const AddNewItem = () => {
           <FormControl sx={{ pl: 3, pr: 5, width: { lg: "400px", sm: "400px", xs: "370px" } }}>
             <InputLabel
               sx={{ pl: 3, pr: 5, width: { lg: "400px", sm: "400px", xs: "340px" } }}
-              id="demo-simple-select-label">Product Type</InputLabel>
+              id="demo-simple-select-label">Course Type</InputLabel>
             <Select
               labelId="demo-simple-select-label"
               id="demo-simple-select"
@@ -163,10 +163,10 @@ const AddNewItem = () => {
 
               onChange={handleChange}
             >
-              <MenuItem value={"Grocery"}>Grocery</MenuItem>
-              <MenuItem value={"Vegetable"}>Vegetable</MenuItem>
-              <MenuItem value={"Fruit"}>Fruit</MenuItem>
-              <MenuItem value={"Masala"}>Masala</MenuItem>
+              <MenuItem value={"IT"}>IT</MenuItem>
+              <MenuItem value={"Business"}>Business</MenuItem>
+              <MenuItem value={"Media"}>Media </MenuItem>
+              <MenuItem value={"Accountant"}>Accountant</MenuItem>
             </Select>
           </FormControl>
         </Box>
@@ -218,7 +218,7 @@ const AddNewItem = () => {
 
 
 
-        <Button sx={{ ml: 10 }} type="submit" variant="contained">Add Product </Button>
+        <Button sx={{ ml: 10 }} type="submit" variant="contained">Add Course </Button>
 
         {(!error) ? "" : <p style={{ paddingLeft: "35px", color: "red", display: "flex" }}>
           {/* <ErrorIcon/> */}

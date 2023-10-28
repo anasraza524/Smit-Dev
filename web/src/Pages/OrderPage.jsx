@@ -222,7 +222,7 @@ const OrderPage = () => {
       onChange={(e) => { setFirstName(e.target.value) }}
        id="standard-basic" label="Updated Full Name" variant="standard" />
 
-      {  (preview)?
+      {/* {  (preview)?
            <Box
   
            sx={{display:"flex",justifyContent:"center",
@@ -244,18 +244,19 @@ const OrderPage = () => {
 <CameraAltIcon sx={{fontSize:"6em"}} />
 
   </Box></label>
-              }
+              } */}
 
-<TextField
+{/* <TextField
 onChange={(e)=>{setCategoryName(e.target.value)}}
 id="filled-basic" label="new Category Name" variant="filled" />
+*/}
 <Button type='submit'>
 Done
 
-</Button>
+</Button> 
 
 </Box></form>
-<Typography sx={{m:2,fontSize:{xs:30,sm:50,lg:50}}} >
+{/* <Typography sx={{m:2,fontSize:{xs:30,sm:50,lg:50}}} >
 
  All Catagries
 </Typography>
@@ -272,7 +273,7 @@ name={eachCategory?.name}
 image={eachCategory?.CategoryImage
 }
 />))}
-</Box>
+</Box> */}
 
 
       </Box></div>
