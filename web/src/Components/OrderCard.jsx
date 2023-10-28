@@ -65,7 +65,7 @@ console.log(age,id)
             </Typography>
             <Box sx={{display:'flex',justifyContent:"space-between"}}>
             <Typography sx={{ opacity: 0.5}} color="gray" variant="body2" gutterBottom  component="div">
-           Total Items x {totalItems}
+           Total Course x {totalItems}
               
             </Typography>
             <Typography sx={{ opacity: 0.5}} color="gray" variant="body2" gutterBottom  component="div">

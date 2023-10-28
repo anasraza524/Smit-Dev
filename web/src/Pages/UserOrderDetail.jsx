@@ -88,7 +88,7 @@ homeProductData?.map((eachProduct, index) => (
             <Box sx={{display:'flex',justifyContent:"space-between"}}>
             <Typography sx={{ opacity: 0.5}} color="gray" variant="body2" gutterBottom  component="div">
          
-            Total Items x {eachProduct.totalItems}
+            Total Course x {eachProduct.totalItems}
             </Typography>
             <Typography sx={{ opacity: 0.5}} color="gray" variant="body2" gutterBottom  component="div">
            { eachProduct.number}
